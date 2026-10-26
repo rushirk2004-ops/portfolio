@@ -5,6 +5,7 @@ import {
   Github, 
   Linkedin, 
   MapPin, 
+  Phone,
   Check, 
   Copy, 
   MessageSquare, 
@@ -24,11 +25,18 @@ export default function Contact() {
   });
   const [status, setStatus] = useState({ type: '', message: '' });
   const [isCopied, setIsCopied] = useState(false);
+  const [isPhoneCopied, setIsPhoneCopied] = useState(false);
 
   const handleCopyEmail = () => {
     navigator.clipboard.writeText(personalInfo.email);
     setIsCopied(true);
     setTimeout(() => setIsCopied(false), 2200);
+  };
+
+  const handleCopyPhone = () => {
+    navigator.clipboard.writeText(personalInfo.phone);
+    setIsPhoneCopied(true);
+    setTimeout(() => setIsPhoneCopied(false), 2200);
   };
 
   const handleChange = (e) => {
@@ -120,6 +128,27 @@ export default function Contact() {
                 aria-label="Copy email"
               >
                 {isCopied ? <Check size={16} className="text-emerald" /> : <Copy size={16} />}
+              </button>
+            </div>
+
+            {/* Phone Card */}
+            <div className="contact-method-card">
+              <div className="method-icon-box">
+                <Phone size={22} />
+              </div>
+              <div className="method-details">
+                <span className="method-label">Phone / WhatsApp</span>
+                <a href={`tel:${personalInfo.phone.replace(/\s+/g, '')}`} className="method-value">
+                  {personalInfo.phone}
+                </a>
+              </div>
+              <button 
+                onClick={handleCopyPhone}
+                className="btn-copy-action"
+                title="Copy phone number"
+                aria-label="Copy phone"
+              >
+                {isPhoneCopied ? <Check size={16} className="text-emerald" /> : <Copy size={16} />}
               </button>
             </div>
 

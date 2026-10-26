@@ -1,23 +1,24 @@
 export const personalInfo = {
   name: "Rushikesh Kunde",
   role: "Software Developer | Java Backend Developer | Machine Learning Enthusiast",
-  location: "Pune, Maharashtra, India",
+  location: "Pune, India",
   email: "rushikeshkunde764@gmail.com",
+  phone: "+91 8767688450",
   github: "https://github.com/rushirk2004-ops",
   linkedin: "https://www.linkedin.com/in/rushikesh-kunde-63678a301/",
   resumeUrl: "./resume.pdf",
-  bioHeadline: "Building robust backend architectures, scalable REST APIs, and data-driven machine learning solutions.",
+  bioHeadline: "Computer Science undergraduate skilled in Python, SQL, statistics, data analysis, and problem-solving with hands-on experience in predictive modeling, backend development, workflow automation, and REST API integration.",
   aboutParagraphs: [
-    "Computer Science Engineering undergraduate with skills in Java, Spring Boot, Python, Machine Learning, data analysis, and backend development. Experienced in building REST APIs, database-driven applications, and data processing workflows.",
+    "Computer Science undergraduate skilled in Python, SQL, statistics, data analysis, and problem-solving with hands-on experience in predictive modeling, backend development, workflow automation, and REST API integration.",
     "Developed 50+ projects and repositories including Movie Recommendation System, Attendance Tracker System, Online Shopping Cart, AI Interview Platform, and Web Scraping pipelines using Python, Scikit-learn, Java, Spring Boot, and MySQL.",
-    "Completed a Web Developer Internship at Appwizer Solution, working on web scraping, workflow automation, and frontend-backend integration.",
-    "Currently pursuing BE in Computer Science Engineering with a 9.16 CGPA, and continuously improving my skills in DSA, Machine Learning, Docker, and AWS."
+    "Completed a Web Developer Internship at Appwizer Solution (OPC) Private Limited, extracting and processing 10K+ records into structured datasets, automating data workflows by 60%, and managing website hosting and deployment using WordPress and Hostinger.",
+    "Currently pursuing BE in Computer Science Engineering at IIIT Pune with a 9.16 CGPA, continuously improving in Data Structures & Algorithms, Machine Learning, Docker, and AWS Cloud Computing."
   ],
   stats: [
     { label: "Current CGPA", value: "9.16", detail: "IIIT Pune (CSE)" },
     { label: "Projects & Repositories", value: "50+", detail: "Java, Python, ML & Web" },
-    { label: "Data Records Scraped", value: "10,000+", detail: "At Appwizer Solution" },
-    { label: "Workflow Efficiency", value: "+60%", detail: "Process Automation" }
+    { label: "Data Records Scraped", value: "10K+", detail: "Appwizer Solution" },
+    { label: "Manual Effort Reduced", value: "60%", detail: "Process Automation" }
   ]
 };
 
@@ -25,20 +26,22 @@ export const skillCategories = [
   {
     category: "Programming Languages",
     icon: "Code2",
-    skills: ["Java", "Python", "C", "C++", "SQL"]
+    skills: ["Java", "SQL", "Python", "C", "C++"]
   },
   {
-    category: "Backend Development",
+    category: "Backend & Web Development",
     icon: "Server",
-    skills: ["Spring Boot", "REST APIs", "JPA", "Flask", "Thymeleaf"]
+    skills: ["Spring Boot", "REST APIs", "JPA", "Flask", "Thymeleaf", "HTML", "CSS"]
   },
   {
-    category: "Machine Learning & Data Analysis",
+    category: "Data Analytics & Machine Learning",
     icon: "BrainCircuit",
     skills: [
       "Machine Learning",
       "Predictive Modeling",
       "Data Analysis",
+      "Statistics",
+      "Data Processing",
       "Pandas",
       "NumPy",
       "Scikit-learn",
@@ -46,31 +49,30 @@ export const skillCategories = [
     ]
   },
   {
-    category: "Databases",
+    category: "Databases & Cloud",
     icon: "Database",
-    skills: ["MySQL", "PostgreSQL", "MongoDB"]
+    skills: ["MySQL", "PostgreSQL", "MongoDB", "AWS (EC2)", "Cloud Computing"]
   },
   {
-    category: "Tools & Cloud",
+    category: "Tools & Platforms",
     icon: "Cloud",
     skills: [
       "Git",
       "GitHub",
       "Docker",
-      "AWS EC2",
       "Postman",
-      "VS Code",
+      "Visual Studio Code",
       "Jupyter Notebook",
-      "IntelliJ IDEA",
-      "Eclipse"
+      "Render",
+      "Eclipse",
+      "IntelliJ IDEA"
     ]
   },
   {
     category: "Core Computer Science",
     icon: "Cpu",
     skills: [
-      "Data Structures and Algorithms",
-      "Object-Oriented Programming",
+      "Data Structures & Algorithms",
       "DBMS",
       "Operating Systems",
       "Computer Networks",
@@ -78,33 +80,33 @@ export const skillCategories = [
     ]
   },
   {
-    category: "Testing & Automation",
+    category: "Automation & Testing",
     icon: "CheckCircle2",
-    skills: ["API Testing", "Unit Testing", "Web Scraping", "BeautifulSoup"]
+    skills: ["Web Scraping", "BeautifulSoup", "API Testing", "Unit Testing"]
   }
 ];
 
 export const projects = [
   {
-    id: "movie-recommendation-system",
-    title: "Movie Recommendation System",
-    category: "Machine Learning",
-    description:
-      "Developed a content-based movie recommendation system using movie metadata, including genres, keywords, cast, director, and overview. Used Pandas, NumPy, CountVectorizer, and Scikit-learn to process metadata and identify similar movies.",
-    technologies: ["Python", "Pandas", "NumPy", "Scikit-learn"],
-    githubUrl: "https://github.com/rushirk2004-ops/movie_recommendation_system",
-    highlight: "Content-based Filtering & Vectorization",
-    featured: true
-  },
-  {
     id: "attendance-tracker-system",
     title: "Attendance Tracker System",
     category: "Backend Development",
     description:
-      "Built an attendance management system to maintain and track student records. Implemented REST APIs, MySQL database integration, and validation.",
+      "Developed an attendance management system to maintain and track student records. Built REST APIs and integrated MySQL database for efficient data storage and retrieval. Implemented structured database workflows and validation processes for reliable attendance tracking.",
     technologies: ["Java", "Spring Boot", "MySQL", "JPA", "REST APIs"],
     githubUrl: "https://github.com/rushirk2004-ops/attendance",
     highlight: "REST API & Relational Database Architecture",
+    featured: true
+  },
+  {
+    id: "movie-recommendation-system",
+    title: "Movie Recommendation System",
+    category: "Machine Learning",
+    description:
+      "Developed a content-based movie recommendation system using movie metadata including genres, keywords, cast, director, and overview. Preprocessed metadata using Pandas and NumPy, applied CountVectorizer with 5,000 features and stop-word removal, and built a recommendation pipeline using scikit-learn.",
+    technologies: ["Python", "Pandas", "NumPy", "Scikit-learn"],
+    githubUrl: "https://github.com/rushirk2004-ops/movie_recommendation_system",
+    highlight: "CountVectorizer & Feature Similarity Pipeline",
     featured: true
   },
   {
@@ -112,9 +114,10 @@ export const projects = [
     title: "Online Shopping Cart",
     category: "Full-Stack & Backend",
     description:
-      "Built a full-stack e-commerce application with product, cart, user, and order management. Implemented Spring Security, authentication, role-based access, password encryption, product search, filtering, and pagination.",
+      "Developed a full-stack e-commerce application using Java, Spring Boot, Thymeleaf, MySQL, and JPA. Implemented Spring Security for authentication, role-based access, password encryption, account locking, product search, filtering, order-status tracking, and Docker-based containerization.",
     technologies: [
       "Java",
+      "OOP",
       "Spring Boot",
       "Spring Security",
       "JPA",
@@ -123,7 +126,7 @@ export const projects = [
       "Docker"
     ],
     githubUrl: "https://github.com/rushirk2004-ops/shoppingweb",
-    highlight: "Role-Based Access & Secure Auth",
+    highlight: "Role-Based Access & Docker Containerization",
     featured: true
   },
   {
@@ -153,7 +156,7 @@ export const projects = [
     title: "Web Scraping & Data Pipeline",
     category: "Backend Development",
     description:
-      "Automated web extraction pipeline built using Python and BeautifulSoup to extract, sanitize, and structure over 10,000+ data records into relational databases.",
+      "Automated web extraction pipeline built using Python and BeautifulSoup to extract, sanitize, and structure over 10,000+ data records into structured datasets.",
     technologies: ["Python", "BeautifulSoup", "Data Analysis", "SQL"],
     githubUrl: "https://github.com/rushirk2004-ops/webscrapping_publication",
     highlight: "10,000+ Records Automated Pipeline",
@@ -184,14 +187,13 @@ export const projects = [
 ];
 
 export const allGithubRepositories = [
-  { name: "movie_recommendation_system", url: "https://github.com/rushirk2004-ops/movie_recommendation_system", language: "Python", desc: "Content-based movie recommendation system using Scikit-learn and Pandas." },
-  { name: "shoppingweb", url: "https://github.com/rushirk2004-ops/shoppingweb", language: "Java", desc: "Full-stack e-commerce store with Spring Boot, Spring Security & MySQL." },
   { name: "attendance", url: "https://github.com/rushirk2004-ops/attendance", language: "Java", desc: "Attendance tracker system with REST APIs, JPA and MySQL integration." },
+  { name: "movie_recommendation_system", url: "https://github.com/rushirk2004-ops/movie_recommendation_system", language: "Python", desc: "Content-based movie recommendation system using Scikit-learn and Pandas." },
+  { name: "shoppingweb", url: "https://github.com/rushirk2004-ops/shoppingweb", language: "Java", desc: "Full-stack e-commerce store with Spring Boot, Spring Security, MySQL & Docker." },
+  { name: "webscrapping_publication", url: "https://github.com/rushirk2004-ops/webscrapping_publication", language: "Python", desc: "Automated BeautifulSoup scraping pipeline processing 10,000+ publication records." },
   { name: "attendance_tracker", url: "https://github.com/rushirk2004-ops/attendance_tracker", language: "Java", desc: "Attendance records management and validation architecture." },
   { name: "ai-interview-platform", url: "https://github.com/rushirk2004-ops/ai-interview-platform", language: "JavaScript", desc: "AI-driven interview testing, assessment, and candidate interaction platform." },
-  { name: "ai-interview-project", url: "https://github.com/rushirk2004-ops/ai-interview-project", language: "JavaScript", desc: "Core assessment engine and UI workflows for interview management." },
   { name: "CropFlow_Project", url: "https://github.com/rushirk2004-ops/CropFlow_Project", language: "Python", desc: "Predictive agriculture analytics and machine learning crop yield modeling." },
-  { name: "webscrapping_publication", url: "https://github.com/rushirk2004-ops/webscrapping_publication", language: "Python", desc: "Automated BeautifulSoup scraping pipeline processing publication records." },
   { name: "forcasting_system", url: "https://github.com/rushirk2004-ops/forcasting_system", language: "Python", desc: "Statistical trend analysis and machine learning forecasting model." },
   { name: "sensorproject", url: "https://github.com/rushirk2004-ops/sensorproject", language: "Java", desc: "Telemetry monitoring and event notification backend in Java." },
   { name: "airline_project", url: "https://github.com/rushirk2004-ops/airline_project", language: "Python", desc: "Flight ticket reservation, passenger scheduling and management workflow." },
@@ -211,16 +213,20 @@ export const internshipExperience = [
   {
     role: "Web Developer Intern",
     company: "Appwizer Solution (OPC) Private Limited",
-    duration: "January 2026 – June 2026",
-    location: "Pune, India (Hybrid)",
+    duration: "Jan 2026 – June 2026",
+    location: "Pune, India",
     type: "Internship",
     achievements: [
-      "Developed Python web scraping pipelines using BeautifulSoup, processing over 10,000 records.",
-      "Automated data extraction workflows, reducing manual effort by 60%.",
-      "Contributed to frontend and backend integration for workflows supporting over 1,000 user interactions.",
-      "Worked on website hosting, deployment, testing, debugging, and issue resolution."
+      "Developed web scraping pipelines using Python and BeautifulSoup, extracting and processing 10K+ records into structured datasets.",
+      "Automated data extraction workflows, reducing manual effort by 60% and improving operational efficiency.",
+      "Contributed to frontend and backend integration for web workflows supporting 1K+ user interactions.",
+      "Managed website hosting and deployment using WordPress and Hostinger.",
+      "Collaborated with development team members during workflow implementation, testing, and issue resolution."
     ],
-    skillsApplied: ["Python", "BeautifulSoup", "Web Scraping", "API Integration", "Automation", "Deployment & Testing"]
+    projectLinks: [
+      { label: "GitHub Repository", url: "https://github.com/rushirk2004-ops/webscrapping_publication" }
+    ],
+    skillsApplied: ["Python", "BeautifulSoup", "Web Scraping", "WordPress", "Hostinger", "Data Automation", "API Integration", "Deployment & Testing"]
   }
 ];
 
@@ -228,15 +234,15 @@ export const educationHistory = [
   {
     degree: "Bachelor of Engineering in Computer Science Engineering",
     institution: "International Institute of Information Technology, Pune",
-    period: "August 2023 – May 2027",
+    period: "Aug 2023 – May 2027",
     score: "9.16 CGPA",
     status: "Currently Pursuing",
     description: "Focusing on Core Computer Science, Advanced Java Backend Architecture, Algorithms, Database Management, and Machine Learning.",
     highlights: ["Academic Excellence (9.16 CGPA)", "Active in Backend & Machine Learning research projects"]
   },
   {
-    degree: "Higher Secondary Education (Class XII)",
-    institution: "State Board of Maharashtra",
+    degree: "Higher Secondary Education (12th)",
+    institution: "Nutan Vidya Prasarak Mandal’s Arts, Commerce & Science College, Lasalgaon",
     period: "2022",
     score: "88.50%",
     status: "Completed",
@@ -244,8 +250,8 @@ export const educationHistory = [
     highlights: ["Strong foundation in Mathematics and Computing fundamentals"]
   },
   {
-    degree: "Secondary Education (Class X)",
-    institution: "State Board of Maharashtra",
+    degree: "Secondary Education (10th)",
+    institution: "Savitribai Phule Madhyamik Vidyalay, Somthandesh",
     period: "2020",
     score: "85.60%",
     status: "Completed",
