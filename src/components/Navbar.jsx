@@ -78,7 +78,7 @@ export default function Navbar() {
         {/* Desktop CTA */}
         <div className="navbar-actions">
           <a
-            href="/resume.pdf"
+            href="./resume.pdf"
             download="Rushikesh_Kunde_Resume.pdf"
             className="btn btn-primary btn-sm resume-btn"
             target="_blank"
@@ -116,7 +116,7 @@ export default function Navbar() {
           ))}
           <li className="mobile-cta-item">
             <a
-              href="/resume.pdf"
+              href="./resume.pdf"
               download="Rushikesh_Kunde_Resume.pdf"
               className="btn btn-primary btn-mobile-resume"
               onClick={() => setIsMobileMenuOpen(false)}

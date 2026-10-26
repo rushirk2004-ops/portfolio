@@ -124,9 +124,45 @@ src/data/portfolioData.js
 
 ---
 
-## 🌐 Free Deployment Guide
+## 🌐 Deployment to GitHub Pages
 
-### Deploying to Vercel (Recommended)
+The portfolio is pre-configured with **relative asset paths (`base: './'`)** and includes an **automated GitHub Actions CI/CD workflow** (`.github/workflows/deploy.yml`).
+
+### Method 1: Automatic Deployment with GitHub Actions (Recommended)
+
+1. **Create a new repository on GitHub**:
+   - Go to [github.com/new](https://github.com/new).
+   - Name the repository: `portfolio` (or `rushirk2004-ops.github.io`).
+   - Keep it **Public** and do not add a README or .gitignore (they are already present).
+
+2. **Push your code to GitHub**:
+   ```bash
+   git branch -M main
+   git remote add origin https://github.com/rushirk2004-ops/portfolio.git
+   git push -u origin main
+   ```
+
+3. **Enable GitHub Pages**:
+   - In your GitHub repository, click **Settings** > **Pages** (under "Code and automation" in the left sidebar).
+   - Under **Build and deployment** > **Source**, select **GitHub Actions**.
+   - That's it! GitHub will automatically trigger the `.github/workflows/deploy.yml` action, build the site, and publish it at:
+     ```
+     https://rushirk2004-ops.github.io/portfolio/
+     ```
+
+---
+
+### Method 2: 1-Command Deployment via `gh-pages`
+
+If you prefer to deploy directly from your local machine:
+```bash
+npm run deploy
+```
+This runs `npm run build` and automatically pushes the compiled `dist` folder to your `gh-pages` branch on GitHub. Then in GitHub **Settings** > **Pages**, set **Source** to `Deploy from a branch` and select `gh-pages`.
+
+---
+
+## 🌐 Deploying to Vercel (Free Alternative)
 
 1. **Push your code to GitHub**:
    ```bash

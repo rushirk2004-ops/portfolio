@@ -5,7 +5,7 @@ export const personalInfo = {
   email: "rushikeshkunde764@gmail.com",
   github: "https://github.com/rushirk2004-ops",
   linkedin: "https://www.linkedin.com/in/rushikesh-kunde-63678a301/",
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "./resume.pdf",
   bioHeadline: "Building robust backend architectures, scalable REST APIs, and data-driven machine learning solutions.",
   aboutParagraphs: [
     "Computer Science Engineering undergraduate with skills in Java, Spring Boot, Python, Machine Learning, data analysis, and backend development. Experienced in building REST APIs, database-driven applications, and data processing workflows.",
