@@ -104,7 +104,36 @@
 .navbar-actions {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.75rem;
+}
+
+.navbar-icon-link {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  transition: all var(--transition-normal);
+}
+
+.navbar-icon-link:hover {
+  transform: translateY(-2px);
+}
+
+.navbar-icon-link.linkedin-link:hover {
+  background: rgba(10, 102, 194, 0.15);
+  border-color: #0a66c2;
+  color: #38bdf8;
+}
+
+.navbar-icon-link.github-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
 }
 
 .mobile-toggle-btn {
@@ -167,6 +196,21 @@
 
 .mobile-cta-item {
   margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.mobile-social-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+}
+
+.btn-mobile-social {
+  padding: 0.55rem;
+  font-size: 0.85rem;
+  gap: 0.45rem;
 }
 
 .btn-mobile-resume {

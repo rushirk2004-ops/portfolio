@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, FileDown, Terminal } from 'lucide-react';
+import { Menu, X, FileDown, Terminal, Linkedin, Github } from 'lucide-react';
+import { personalInfo } from '../data/portfolioData';
 import '../styles/Navbar.css';
 
 const navItems = [
@@ -78,6 +79,26 @@ export default function Navbar() {
         {/* Desktop CTA */}
         <div className="navbar-actions">
           <a
+            href={personalInfo.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="navbar-icon-link linkedin-link"
+            aria-label="LinkedIn Profile"
+            title="Connect on LinkedIn"
+          >
+            <Linkedin size={18} />
+          </a>
+          <a
+            href={personalInfo.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="navbar-icon-link github-link"
+            aria-label="GitHub Profile"
+            title="View GitHub"
+          >
+            <Github size={18} />
+          </a>
+          <a
             href="./resume.pdf"
             download="Rushikesh_Kunde_Resume.pdf"
             className="btn btn-primary btn-sm resume-btn"
@@ -115,6 +136,26 @@ export default function Navbar() {
             </li>
           ))}
           <li className="mobile-cta-item">
+            <div className="mobile-social-row">
+              <a
+                href={personalInfo.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-secondary btn-mobile-social"
+              >
+                <Linkedin size={16} />
+                <span>LinkedIn</span>
+              </a>
+              <a
+                href={personalInfo.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-secondary btn-mobile-social"
+              >
+                <Github size={16} />
+                <span>GitHub</span>
+              </a>
+            </div>
             <a
               href="./resume.pdf"
               download="Rushikesh_Kunde_Resume.pdf"

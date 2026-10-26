@@ -177,7 +177,7 @@ export default function Contact() {
                   <Linkedin size={20} />
                   <div className="social-card-text">
                     <span className="platform-name">LinkedIn</span>
-                    <span className="profile-handle">rushikesh-kunde</span>
+                    <span className="profile-handle">in/rushikesh-kunde-63678a301</span>
                   </div>
                   <ExternalLink size={14} className="social-external-icon" />
                 </a>
